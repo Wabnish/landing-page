@@ -26,14 +26,14 @@ header,
 footer {
   background-color: #99d98c;
   border-bottom: 10px solid #34a0a4;
-  height: 200 px;
+  height: 60px;
   width: 100%;
   line-height: 60px;
-  /* display: block; */
 }
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 
 footer {
@@ -47,6 +47,11 @@ img {
   display: block;
   margin: 20px auto;
   width: 300px;
+}
+
+.hero {
+  display: block;
+  height: 100px;
 }
 
 .main-section {
@@ -97,4 +102,8 @@ button {
   text-align: center;
   margin: 20px auto;
   display: block;
+}
+
+.text-right {
+  text-align: right;
 }
