@@ -7,11 +7,21 @@ body {
   position: relative;
   font-family: 'Goudy Bookletter 1911', sans-serif;
   font-size: 20px;
-  background-color: #34a0a4;
-  color: #184e77;
+  background-color: #a88747;
+  color: white;
+  margin: 0;
 }
 
-h1,
+h1 {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid #582503;
+  text-align: center;
+  margin: 0;
+}
+
 h2 {
   margin: 20px;
 }
@@ -24,8 +34,8 @@ li {
 
 header,
 footer {
-  background-color: #99d98c;
-  border-bottom: 10px solid #34a0a4;
+  background-color: #1b2b00;
+  border-bottom: 10px solid #582503;
   height: 60px;
   width: 100%;
   line-height: 60px;
@@ -33,31 +43,47 @@ footer {
 
 header {
   position: sticky;
+  display: block;
   top: 0;
+  z-index: 1000;
+  height: 60px;
+  line-height: 60px;
 }
 
 footer {
   position: absolute;
   margin-top: 0;
   bottom: 0;
-  color: #184e77;
 }
 
-img {
+.profile-image {
   display: block;
   margin: 20px auto;
   width: 300px;
+  border: 5px solid #582503;
+  padding: 5px;
+  background-color: #1b2b00;
 }
 
 .hero {
-  display: block;
-  height: 100px;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .main-section {
   padding: 60px 0;
   display: block;
-  background-color: #52b69a;
 }
 
 .image-section {
@@ -68,15 +94,16 @@ img {
   margin-bottom: 0;
   display: block;
   padding: 20px 10px 40px 10px;
-  border-top: 3px solid #1e6091;
-  background-color: #168aad;
+  border-top: 3px solid #702a0b;
+  background-color: #3c4c00;
 }
 
 form {
+  position: relative;
   margin: 0 auto;
   width: 500px;
-  padding: 10px;
-  border: 5px solid #1a759f;
+  padding: 20px;
+  border: 5px solid #b49e5c;
   border-radius: 20px;
 }
 
@@ -88,13 +115,13 @@ label {
 input {
   box-sizing: border-box;
   width: 300px;
-  border: 1px solid #1a759f;
+  border: 1px solid #b49e5c;
 }
 
 button {
   height: 40px;
   width: 120px;
-  background-color: #1a759f;
+  background-color: #b49e5c;
   color: #fdf8f5;
 }
 
